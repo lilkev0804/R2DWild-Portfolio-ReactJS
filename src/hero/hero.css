@@ -12,43 +12,8 @@
     align-items: center;
     justify-content: center;
   }
-  .containerPlanet{
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      perspective: 1200px;
-      perspective-origin: 50% 50%;
-  }
-  .shadow-planet{
-    position: absolute;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
-      transform: rotateX(90deg) translateZ(-150px);
-      z-index: -1;
-   }
-  .planet-1{
-      position: absolute;
-      top: 10%;
-      left: 10%;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 100px 100px, #F76C6C, #000);
-      transform: translate(-50%, -50%) perspective(1000px);
-      transform-style: preserve-3d;
-  }
-  .planet-2{
-    position: absolute;
-    top: 70%;
-    right: 10%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 100px 90px, #000, #F76C6C);
-    transform: translate(-50%, -50%) perspective(1000px);
-    transform-style: preserve-3d;
-}
+
+
 .hero-animation{
     color: white;
     overflow: hidden;
@@ -59,9 +24,16 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    perspective: 1200px;
-    perspective-origin: 50% 50%;
+    perspective: 1000px;
     background-color: #000;
+}
+.afterMessage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    animation: rotate 3s 14s linear forwards;
+    transform: scale3d(1, 0, -0.8) perspective(10000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
 }
 .hero-fix{
     font-size: 4em;
@@ -69,12 +41,7 @@
     color: white;
     letter-spacing: 3px;
     font-family: 'StarJedi';
-    animation: rotate 3s 12s linear backwards;
-    animation-timing-function: 25s;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 }
 .hero-fix-sd{
     font-size: 4em;
@@ -82,46 +49,147 @@
     color: white;
     letter-spacing: 3px;
     font-family: 'StarJedi';
-    animation: rotate 3s 12s linear backwards;
-    animation-timing-function: 25s;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 }
 @keyframes rotate{
-    from { opacity: 0; }
-    to {opacity: 1; }
+    from { transform: scale3d(1,0,-0.8) translate(-50%, -50%); }
+    to {transform: scale3d(1,1,1) translate(-50%, -50%) ;  }
 }
+
 .gib{
     color: white;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) perspective(1000px);
-    transform-style: preserve-3d;
-    animation: message linear 12s forwards;
+    height: 100%;
+    width: 100%;
+    transform: perspective(1000px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
     z-index: 10;
+    border: 1px;
 }    
-.element-anim{
-    line-height: 5vh;
-    font-size: 2rem;
-    animation: text-rotate 12s linear backwards;
+.gib-element{
+    height: 50%;
+    width: 100%;
+    transform: translateY(1000px);
+    animation: translatemessage 15s linear forwards;
 }
-@keyframes text-rotate{
+@keyframes translatemessage{
     0%{
-        transform: rotateX(45deg);
-    }100%{
-        transform: rotateX(45deg);
-    }
-}
-@keyframes message{
-    0%{
-        transform: translateY(400px) translateX(-50%);
-
+        transform: translateY(1000px);
     }
     100%{
-        transform: translateY(-1100px) translateX(-50%);
+        transform: translateY(-1000px);
     }
 }
+.element-anim{
+    line-height: 5vh;
+    font-size: 3rem;
+}
 
+
+
+.containerPlanet{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    perspective: 100px;
+    transform: perspective(1000px);
+}
+.star{
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: white;
+    transform: translateZ(-1000px);
+    animation: stars 2s linear infinite;
+    opacity: 0.5;
+}
+.star:nth-child(1){
+    top: 46%;
+    animation-delay: .5s;
+}
+.star:nth-child(2){
+    top: 25%;
+    animation-delay: .2s;
+}
+.star:nth-child(3){
+    bottom: 25%;
+    animation-delay: .27s;
+}
+.star:nth-child(3){
+    bottom: 13%;
+    left: 14%;
+    animation-delay: .34s;
+}
+.star:nth-child(4){
+    bottom: 5%;
+    left: 27%;
+    animation-delay: .17s;
+}
+.star:nth-child(5){
+    bottom: 25%;
+    right: 7%;
+    animation-delay: .75s;
+}
+.star:nth-child(6){
+    bottom:42%;
+    right: 19%;
+    animation-delay: .7s;
+}
+.star:nth-child(7){
+    top:15%;
+    right: 12%;
+    animation-delay: .4s;
+}
+.star:nth-child(8){
+    top:22%;
+    left: 9%;
+    animation-delay: .4s;
+}
+.star:nth-child(9){
+    top:50%;
+    left: 25%;
+    animation-delay: 0.7s;
+}
+.star:nth-child(10){
+    bottom:30%;
+    right: 40%;
+    animation-delay: .5s;
+}
+.star:nth-child(10){
+    top:15%;
+    left: 10%;
+    animation-delay: .1s;
+}
+.star:nth-child(11){
+    top:12%;
+    right: 19%;
+    animation-delay: .7s;
+}
+.star:nth-child(12){
+    bottom:27%;
+    left: 17%;
+    animation-delay: 0.8s;
+}
+.star:nth-child(13){
+    top:50%;
+    left: 25%;
+    animation-delay: 0.9s;
+}
+.star:nth-child(114){
+    bottom:30%;
+    right: 40%;
+    animation-delay: 1.1s;
+}
+.star:nth-child(15){
+    top:15%;
+    left: 10%;
+    animation-delay: 1s;
+}
+
+@keyframes stars{
+    to{
+        transform: translateZ(500px) scale(0.1);
+        opacity: 1;
+    }
+}

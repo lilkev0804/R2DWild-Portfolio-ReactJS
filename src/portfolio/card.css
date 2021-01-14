@@ -11,6 +11,7 @@ button:focus{
     flex-direction: column;
     align-items: center;
     margin-bottom: 5vh;
+    margin-right: 20px;
     box-shadow: 11px 11px 11px rgba(56, 48, 48, 0.62);
     border-radius: 10px;
     position: relative;
@@ -127,3 +128,4 @@ button:focus{
         opacity: 1;
     }
 }
+

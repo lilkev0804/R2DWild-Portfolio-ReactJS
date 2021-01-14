@@ -4,6 +4,7 @@ import Wilders from './profils/profils';
 
 
 const DuplicateCard = Wilders.map((Wilder , i)  =>
+  
   <Card key={i}
   image={"./img/" + Wilder.image + ".jpg"}
   identity={Wilder.identity}
