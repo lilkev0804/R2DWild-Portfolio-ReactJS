@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.container-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1400px;
+  margin: 100px auto;
+}
+
+.invisible{
+  display: none;
+  animation: imgProjectaf 1.5s cubic-bezier(.17,.67,.83,.67) forwards;
+}
+
+@keyframes imgProjectaf{
+  0%{
+     opacity: 0;
+      
+  }
+  100%{
+      opacity: 1;
+      
+  }
+}

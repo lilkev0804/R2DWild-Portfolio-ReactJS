@@ -1,0 +1,93 @@
+.general-container {
+  background-color: black;
+  width: 100%;
+}
+
+.container-projects {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+
+.all-projects {
+  position: relative;
+  width: 350px;
+  top: 50%;
+  left: 6vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.name-projects {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  cursor: crosshair;
+  z-index: 10;
+}
+
+.test {
+  color: white;
+}
+
+.invisible {
+  opacity: 0;
+  -webkit-animation: imgProjectaf 1.5s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+          animation: imgProjectaf 1.5s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+}
+
+.visible {
+  display: block;
+}
+
+.img-project {
+  width: 500px;
+  height: 500px;
+  background-color: green;
+  position: absolute;
+  z-index: -10;
+  top: -25%;
+  margin: 10px 0;
+  opacity: 0;
+  -webkit-animation: imgProject 1.5s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+          animation: imgProject 1.5s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+}
+
+@-webkit-keyframes imgProject {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imgProject {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes imgProjectaf {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imgProjectaf {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

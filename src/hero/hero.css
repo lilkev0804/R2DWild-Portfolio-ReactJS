@@ -1,0 +1,127 @@
+   .hero{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    margin-bottom: 20px;
+  }
+  .shadow{
+    background-color: rgba(0, 0, 0, 0.53);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerPlanet{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      perspective: 1200px;
+      perspective-origin: 50% 50%;
+  }
+  .shadow-planet{
+    position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+      transform: rotateX(90deg) translateZ(-150px);
+      z-index: -1;
+   }
+  .planet-1{
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 100px 100px, #F76C6C, #000);
+      transform: translate(-50%, -50%) perspective(1000px);
+      transform-style: preserve-3d;
+  }
+  .planet-2{
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 100px 90px, #000, #F76C6C);
+    transform: translate(-50%, -50%) perspective(1000px);
+    transform-style: preserve-3d;
+}
+.hero-animation{
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+    background-color: #000;
+}
+.hero-fix{
+    font-size: 4em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+    font-family: 'StarJedi';
+    animation: rotate 3s 12s linear backwards;
+    animation-timing-function: 25s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-fix-sd{
+    font-size: 4em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+    font-family: 'StarJedi';
+    animation: rotate 3s 12s linear backwards;
+    animation-timing-function: 25s;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes rotate{
+    from { opacity: 0; }
+    to {opacity: 1; }
+}
+.gib{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) perspective(1000px);
+    transform-style: preserve-3d;
+    animation: message linear 12s forwards;
+    z-index: 10;
+}    
+.element-anim{
+    line-height: 5vh;
+    font-size: 2rem;
+    animation: text-rotate 12s linear backwards;
+}
+@keyframes text-rotate{
+    0%{
+        transform: rotateX(45deg);
+    }100%{
+        transform: rotateX(45deg);
+    }
+}
+@keyframes message{
+    0%{
+        transform: translateY(400px) translateX(-50%);
+
+    }
+    100%{
+        transform: translateY(-1100px) translateX(-50%);
+    }
+}
+

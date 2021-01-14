@@ -1,0 +1,57 @@
+.Nav {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+}
+
+.Nav ul .nav-link {
+  list-style: none;
+  color: #F76C6C;
+  display: inline;
+  margin: 0 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-top: -25px;
+  cursor: pointer;
+}
+
+.Nav__black {
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Nav__white {
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+/*# sourceMappingURL=navbar.css.map */

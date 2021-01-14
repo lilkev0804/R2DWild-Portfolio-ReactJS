@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Navbar from './navbar/navbar';
+import Hero from './hero/hero';
+import DuplicateCard from './portfolio/duplicate';
+import Projects from './projects/projects'
+import Staff from './staff/staff'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component{
+
+  render() {
+    return (
+      <div className="App">
+        <div className="Nav">
+          <ul>
+              <li className="nav-link">Wilders</li>
+              <li className="nav-link">Projects</li>
+              <li className="nav-link">Staff WCS</li>
+          </ul>
+        </div>
+              <Navbar></Navbar>
+              <Hero></Hero>
+        <div className="container-card">
+            {DuplicateCard}
+        </div>
+        <Projects></Projects>
+        <Staff></Staff>
+      </div>
+      
+    );
+  }
 }
 
 export default App;
+
