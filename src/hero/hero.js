@@ -1,12 +1,9 @@
-import React from 'react'
 import "./hero.css";
 import DuplicateStar from './duplicateStars'
 
-
-
-
 const Hero = () => {
     return <div className="hero-animation" id="hero">
+        
        <div className="gib">
         <div className="gib-element">
         <p className="element-anim">La Wild Code School vous presente</p>
@@ -23,8 +20,10 @@ const Hero = () => {
             <p className="hero-fix-sd">R 2 D W i L D</p>
         </div>
         <div className="containerPlanet">
-            {DuplicateStar}            
+            {DuplicateStar}    
+            <div className="scroll-btn"></div>        
         </div>
+        
     </div>
 }
 
