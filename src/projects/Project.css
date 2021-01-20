@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
+.project-container{
+    width: 100%;
+    height: 100vh;
+    /*background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-text{
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    padding-left: 10vw;
+}
+.project-text h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #F76C6C;
+    font-family: 'Coustard', serif;
+}
+.project-text p{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin-bottom: 2vw;
+    font-family: "Roboto";
+}
+.diapo-contain{
+    width: 30%;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+    padding-top: 10vh;
+}
+.diapo-contain .img{
+    height: 500px;
+    width: 300px;
+}
+.react-slideshow-container+ul.indicators li{
+    color: red !important;
+}
+.logo-container{
+    
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
