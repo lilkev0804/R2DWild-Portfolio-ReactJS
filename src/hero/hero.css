@@ -35,6 +35,16 @@
     animation: rotate 3s 14s linear forwards;
     transform: scale3d(1, 0, -0.8) perspective(10000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
 }
+@media screen and (max-width: 996px){
+    .afterMessage{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 476px){
+    .hero-fix ,.hero-fix-sd{
+       font-size: 2rem !important;
+    }
+}
 .hero-fix{
     font-size: 4em;
     text-transform: uppercase;

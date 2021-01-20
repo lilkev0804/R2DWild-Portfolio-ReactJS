@@ -9,19 +9,7 @@ class Navbar extends React.Component {
     }
     componentDidMount() {
        window.addEventListener("scroll", this.handleScroll);
-       const navLinks = document.querySelectorAll('.nav-link')
-       const navLink = navLinks.forEach(link => {
-         link.addEventListener('click', function(){
-           if(this.innerHTML === "Wilders"){
-            console.log('wilders')
-           }else if(this.innerHTML === "Projects"){
-             console.log('projects')
-          }else{
-            console.log('staff')
-          }
-         })
-       })
-       return navLink
+       
      }
      componentWillUnmount() {
         window.removeEventListener('scroll');

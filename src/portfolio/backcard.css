@@ -1,0 +1,13 @@
+.card-backfirst{
+    width: 300px;
+    min-height: 590px;
+    padding: 10px 0;
+    background-color: #f09d9d7c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 11px 11px 11px rgba(56, 48, 48, 0.62);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 100;
+}

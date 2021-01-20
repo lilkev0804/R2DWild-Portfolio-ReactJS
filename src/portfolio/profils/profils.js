@@ -1,6 +1,7 @@
 
 const Wilders =[
     {
+        key:1,
         image:"rachel",
         identity:"ABENZOAR Rachel",
         city:'Paris',

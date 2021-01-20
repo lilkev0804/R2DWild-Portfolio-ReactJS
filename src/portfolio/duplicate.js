@@ -3,8 +3,8 @@ import Card from './card';
 import Wilders from './profils/profils';
 
 
+
 const DuplicateCard = Wilders.map((Wilder , i)  =>
-  
   <Card key={i}
   image={"./img/" + Wilder.image + ".jpg"}
   identity={Wilder.identity}
@@ -19,5 +19,4 @@ const DuplicateCard = Wilders.map((Wilder , i)  =>
 );
 
 
-
-export default DuplicateCard
+export default DuplicateCard 
