@@ -33,8 +33,7 @@ class Navbar extends React.Component {
         return <div className={`Nav ${this.state.nav && ('Nav__black' || 'Nav__white')}`}>
         <ul>
             <li className="nav-link">Profils</li>
-            <li className="nav-link">Projects</li>
-            <li className="nav-link">Staff WCS</li>
+            <li className="nav-link">Contact WCS</li>
         </ul>
   
     </div>
