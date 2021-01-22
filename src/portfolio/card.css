@@ -4,7 +4,7 @@ button:focus{
 
 .card{
     width: 300px;
-    min-height: 590px;
+    min-height: 500px;
     background-color: #F76C6C;
     padding: 10px 0;
     display: flex;
@@ -15,6 +15,7 @@ button:focus{
     box-shadow: 11px 11px 11px rgba(56, 48, 48, 0.62);
     border-radius: 10px;
     position: relative;
+    justify-content: space-around;
 }
 .top-card{
     width: 100%;
@@ -29,6 +30,7 @@ button:focus{
 }
 .identity{
     width: 100%;
+    margin-top: -50px;
     text-align: center;
     color: white;
 }
@@ -36,38 +38,21 @@ button:focus{
     text-transform: capitalize !important;
     margin-bottom: 5px;
 }
-.message{
-    margin-top: 10px;
-    height: 126px;
-}
-.message p{
+.expertise-element{
     color: white;
-    letter-spacing: 0.9px;
-    text-align: justify;
-    padding: 0px 10px;
+    font-weight: bold;
+    text-transform: capitalize;
 }
-.skill{
-    width: 95%;
-    margin: 30px auto 15px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.skill-box{
-    width: 30%;
-    background-color: white;
-    padding: 10px 0;
-}
-.skill-box p {
-    font-size: .7rem;
-    letter-spacing: 1px;
-    font-weight: 700;
-    color: #F76C6C;
 
+.myexpertise{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    margin-top: -10px;
 }
 .social{
     width: 200px;
-    margin: 10px auto 15px auto;
+    margin: 0px auto 0px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,21 +82,11 @@ button:focus{
     margin: 5px auto;
     background-color: white;
 }
-.moreInfo{
-    font-size: 1.5rem;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    cursor: pointer;
-    background-color: transparent;
-    border: transparent 0px solid;
-}
-
 .back-card{
     background-color: #F76C6C;
     width: 300px;
     min-height: 590px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
@@ -129,17 +104,78 @@ button:focus{
     }
 }
 
-.card-backfirst{
+.backcard-1{
     width: 300px;
-    min-height: 1000px;
+    min-height: 500px;
     padding: 10px 0;
-    background-color: #f09d9d7c;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 11px 11px 11px rgba(56, 48, 48, 0.62);
+    background-color: #F76C6C;
     border-radius: 10px;
     position: absolute;
     top: 0;
-    z-index: 100;
+    z-index: -10;
+    color: white;
+    text-align: left;
   }
+  .showBackcard{
+      z-index: 1!important;
+      animation : scaleCard .4s ease-in forwards;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  @keyframes scaleCard{
+      from{
+        transform: translateX(0px);
+        opacity: 0;
+      }to{
+          transform: translateX(10px);
+          opacity: 1;
+          box-shadow: 11px 11px 11px rgba(56, 48, 48, 0.62);
+      }
+  }
+  .moreInfo{
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent 0px solid;
+    margin-left: auto;
+}
+.backcard-1 .moreInfo{
+    margin-right: auto;
+    margin-left: 0px;
+    align-self: end;
+}
+.arrowbtn{
+    width: 70px;
+    height: 40px;
+}
+.container-card-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+.title-card{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 10px 0px 10px 8px;
+}
+.element-card{
+    margin: 0px 0px 0px 16px;
+    text-transform: capitalize;
+}
+
+.backanim{
+    animation: backanim .3s ease-in forwards;
+
+}
+@keyframes backanim{
+    from{
+        transform: translateX(10px);
+      }to{
+          transform: translateX(0px);
+      }
+}
