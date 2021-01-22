@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import './App.css';
 import Navbar from './navbar/navbar';
+import Footer from './Footer/footer';
 import Hero from './hero/hero';
+import Staff from './staff/staff';
 import DuplicateCard from './portfolio/duplicate';
-import Projects from './projects/Projects'
+
 
 class App extends Component{
   render() {
@@ -12,9 +14,10 @@ class App extends Component{
         <Navbar></Navbar>
         <Hero></Hero>
         <div className="container-card">
-            {DuplicateCard}
+            {DuplicateCard} 
         </div>
-        <Projects></Projects>
+        <Staff></Staff>
+        <Footer></Footer>
       </div>
       
     );
