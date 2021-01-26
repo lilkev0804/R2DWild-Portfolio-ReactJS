@@ -27,13 +27,16 @@ class Navbar extends React.Component {
        }
      }
 
-
+     test = (event) => {
+       console.log(event.target.innerHTML)
+     }
 
      render(){
         return <div className={`Nav ${this.state.nav && ('Nav__black' || 'Nav__white')}`}>
         <ul>
-            <li className="nav-link">Profils</li>
-            <li className="nav-link">Contact WCS</li>
+            <li onClick={(event) => this.test(event)} className="nav-link">Profils</li>
+            <li onClick={(event) => this.test(event)}  className="nav-link">Projets</li>
+            <li onClick={(event) => this.test(event)}  className="nav-link">Contact WCS</li>
         </ul>
   
     </div>

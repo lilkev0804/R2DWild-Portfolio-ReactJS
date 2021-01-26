@@ -1,11 +1,18 @@
 .section-staff{
     background-color: white;
     width: 100%;
-    padding: 55px 0;
+    margin-bottom: 5vh;
+}
+.staff-section-title{
+    color:#F76C6C;
+    letter-spacing:2px;
+    font-size: 2rem;
+    margin-bottom: 4vh;
+    text-transform: uppercase;
 }
 .container-staff{
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: auto;
     display: flex;
 }
@@ -17,6 +24,9 @@
     .recrutement{
         max-width: 400px;
         width: 100% !important;
+    }
+    .profils-staff{
+        width:400px !important;
     }
 }
 @media screen and (max-width:400px){

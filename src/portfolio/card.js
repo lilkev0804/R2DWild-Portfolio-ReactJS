@@ -7,25 +7,38 @@ class Card extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            show : ""
-
+            show : "",
+            unshow: "",
+            copied: false,
         }
     }
     next  = (event) =>  {
      this.setState({
-         show:"showBackcard"
-         
+         show:"showBackcard",
+         unshow:''
      })
     }
     back  = (event) =>  {
         this.setState({
-            show:""
+            show:"invisible",
+            unshow:"backFaceCard"
         })
     }
-    
+    emailPaste = (event) => {
+        const email = event.target.value;
+        const emailCopy = document.querySelector('.emailCopy')
+        var fullLink = document.createElement('input');
+        document.body.appendChild(fullLink);
+        fullLink.value = email
+        fullLink.select();
+        document.execCommand("copy");
+        fullLink.remove();
+        emailCopy.innerHTML = `Email copié`
+    }
 
     render(){
-        return <div className="card" date-index={this.props.key}>
+        return <div className={`card ${this.state.unshow}`}>
+            <span className={`emailCopy ${this.state.email}`}></span>
                 <div className="top-card">
                     <img className="img-card" alt={this.props.name} src={this.props.image} ></img>
                 </div>
@@ -40,7 +53,7 @@ class Card extends React.Component{
                 <div className="social">
                     <div className="box-social"><a href={this.props.linkedin} target='blanck'><i class="fab fa-linkedin"></i></a></div>
                     <div className="box-social"><a href={this.props.github} target="blanck"><i class="fab fa-github-square"></i></a></div>
-                    <div className="box-social"><a href={this.props.email}><i class="far fa-envelope"></i></a></div>
+                    <button className="box-social btnemail" onClick={(event) =>this.emailPaste(event)}value={this.props.email}><i class="far fa-envelope"></i></button>
                 </div>
                 <button onClick={(event) => this.next(event)} className="moreInfo" ><img className="arrowbtn" alt="arrow right" src="img/right-arrow.svg"></img></button>
                 <div className={`backcard-1 ${this.state.show}`}>

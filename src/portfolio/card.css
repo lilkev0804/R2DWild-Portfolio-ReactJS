@@ -57,7 +57,7 @@ button:focus{
     align-items: center;
     justify-content: space-between;
 }
-.social a{
+.social a {
     color:#F76C6C !important;
     font-size: 2rem;
     position: absolute;
@@ -75,6 +75,10 @@ button:focus{
     background-color: white;
     position: relative;
     box-shadow: 0px 0px 12px 2px #F9A1A1;
+}
+.box-social button{
+    background-color: #F76C6C;
+    border: transparent 1px solid ;
 }
 .break{
     width: 150px;
@@ -115,24 +119,40 @@ button:focus{
     z-index: -10;
     color: white;
     text-align: left;
-  }
-  .showBackcard{
-      z-index: 1!important;
-      animation : scaleCard .4s ease-in forwards;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
-  @keyframes scaleCard{
-      from{
-        transform: translateX(0px);
+}
+.showBackcard{
+    z-index: 1!important;
+    animation : scaleCard .4s ease-in forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@keyframes scaleCard{
+    from{
+      transform: translateX(0px);
+      opacity: 0;
+    }to{
+        transform: translateX(10px);
+        opacity: 1;
+        box-shadow: 11px 11px 11px rgba(56, 48, 48, 0.62);
+    }
+}
+.backFaceCard{
+ animation : backface .4s linear forwards;
+}
+@keyframes backface{
+    from{
+        transform: translateX(10px);
         opacity: 0;
       }to{
-          transform: translateX(10px);
+          transform: translateX(0px);
           opacity: 1;
           box-shadow: 11px 11px 11px rgba(56, 48, 48, 0.62);
       }
-  }
+}
+.invisible{
+   display: none;
+}
   .moreInfo{
     font-size: 1.5rem;
     color: white;
@@ -178,4 +198,31 @@ button:focus{
       }to{
           transform: translateX(0px);
       }
+}
+.btnemail{
+   border: 1px solid transparent;
+   font-size: 2rem;
+   color:#F76C6C;
+   cursor: pointer;
+}
+.emailCopy{
+    padding: 10px;
+    background-color:#F76C6C;
+    font-size: .9rem;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 800;
+}
+.animationCopyEmail{
+    animation: pasteEmail .5s linear forwards;
+}
+@keyframes pasteEmail {
+    from{
+        transform: translateX(100px);
+    }to{
+        transform: translateX(0px);
+    }
 }
