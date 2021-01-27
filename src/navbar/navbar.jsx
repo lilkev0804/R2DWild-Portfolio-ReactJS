@@ -12,7 +12,7 @@ class Navbar extends React.Component {
        
      }
      componentWillUnmount() {
-        window.removeEventListener('scroll');
+        window.removeEventListener('scroll',this.exit);
       }
      handleScroll= () => {
          const hero = document.querySelector('.hero-animation').offsetHeight
@@ -34,7 +34,7 @@ class Navbar extends React.Component {
      render(){
         return <div className={`Nav ${this.state.nav && ('Nav__black' || 'Nav__white')}`}>
         <ul>
-            <li onClick={(event) => this.test(event)} className="nav-link">Profils</li>
+            <li onClick={(event) => this.test(event)} className="nav-link firstlink">Profils</li>
             <li onClick={(event) => this.test(event)}  className="nav-link">Projets</li>
             <li onClick={(event) => this.test(event)}  className="nav-link">Contact WCS</li>
         </ul>

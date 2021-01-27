@@ -8,7 +8,7 @@ const Wilders =[
         prez:'Courte présentation',
         linkedin:'https://www.linkedin.com/in/rachel-abenzoar-8a3300201/',
         github:'https://github.com/Rachel-Ab',
-        email:'rachel.abenzoar@gmail.com ',
+        email:'rachel.abenzoar@gmail.com',
         skill:[
             'JavaScript', 
             'HTML',

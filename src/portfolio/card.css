@@ -216,13 +216,18 @@ button:focus{
     color: white;
     font-weight: 800;
 }
-.animationCopyEmail{
-    animation: pasteEmail .5s linear forwards;
+.emailpaste{
+    animation: removePopUp 5s cubic-bezier(1,.01,.93,.04) forwards;
 }
-@keyframes pasteEmail {
+@keyframes removePopUp{
     from{
-        transform: translateX(100px);
-    }to{
-        transform: translateX(0px);
+        opacity:1;
     }
+    to{
+        opacity: 0;
+    }
+}
+
+.ico-email{
+    z-index: -10;
 }
