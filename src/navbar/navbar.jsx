@@ -1,7 +1,5 @@
 import React from 'react';
 import "./navbar.css";
-
-
 class Navbar extends React.Component {
     listener = null;
     state = {
@@ -28,7 +26,7 @@ class Navbar extends React.Component {
      }
 
      test = (event) => {
-       console.log(event.target.innerHTML)
+
      }
 
      render(){

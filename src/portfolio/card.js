@@ -37,7 +37,7 @@ class Card extends React.Component{
 
     render(){
         const {name, image,identity,workPlace1,workPlace2,workPlace3,beforeWcs1,linkedin,github,remote,internationalMobility,franceMobility} = this.props
-        
+    
         return <div className={`card ${this.state.unshow}`}>
             <span className={`emailCopy ${this.state.isToggleOn ? "emailpaste" : 'invisible'}`}>Email copié</span>
                 <div className="top-card">
@@ -52,11 +52,10 @@ class Card extends React.Component{
                     <p className="myexpertise">{beforeWcs1}</p>
                 </div>
                 <div className="social">
-                    <div className="box-social"><a href={linkedin} target='blanck'><i class="fab fa-linkedin"></i></a></div>
-                    <div className="box-social"><a href={github} target="blanck"><i class="fab fa-github-square"></i></a></div>
-
-                    <button className="box-social btnemail" onClick={(e) => this.emailPaste(e)} value={this.props.email}  >
-                    {/* <i class="far fa-envelope ico-mail"></i> */}
+                    <div className="box-social"><a href={linkedin} target='blanck'><i className="fab fa-linkedin"></i></a></div>
+                    <div className="box-social"><a href={github} target="blanck"><i className="fab fa-github-square"></i></a></div>
+                    <button className=" btnemail" onClick={(e) => this.emailPaste(e)} value={this.props.email} >
+            
                     </button>
                 </div>
 

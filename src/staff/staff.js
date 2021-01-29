@@ -30,7 +30,7 @@ const members = [
 
 const Staff = () => {
     
-    return <div className="section-staff">
+    return <div className="section-staff" >
     <h2 className="staff-section-title">Contacter la Wild Code School</h2>
        <div className="container-staff">
            <div className="profils-staff">
@@ -43,8 +43,8 @@ const Staff = () => {
                             <p className="member-name">{member.name} {member.surname}</p>
                             <p className="member-profession">{member.profession}</p>
                             <div className="social-member">
-                            <a target="blanck" href={member.linkedin}> <i class="ico-follow-member fab fa-linkedin-in"></i></a>
-                            <a target="blanck" href={member.github}> <i class="ico-follow-member fab fa-github"></i></a>
+                            <a target="blanck" href={member.linkedin}> <i className="ico-follow-member fab fa-linkedin-in"></i></a>
+                            <a target="blanck" href={member.github}> <i className="ico-follow-member fab fa-github"></i></a>
                             </div>
                         </div>
                         </div>
