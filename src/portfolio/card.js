@@ -35,10 +35,11 @@ class Card extends React.Component{
         fullLink.remove();
     }
 
+
     render(){
         const {name, image,identity,workPlace1,workPlace2,workPlace3,beforeWcs1,linkedin,github,remote,internationalMobility,franceMobility} = this.props
     
-        return <div className={`card ${this.state.unshow}`}>
+        return <div  className={`card ${this.state.unshow} `}>
             <span className={`emailCopy ${this.state.isToggleOn ? "emailpaste" : 'invisible'}`}>Email copié</span>
                 <div className="top-card">
                     <img className="img-card" alt={name} src={image} ></img>

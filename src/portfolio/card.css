@@ -244,3 +244,15 @@ button:focus{
 .ico-email{
     z-index: -10;
 }
+@media screen and (max-width: 496px){
+    .backcard-1{
+        width: 100%;
+        transform: translateX(0px);
+    }
+    .showBackcard{
+        margin-left: -16px;
+    }
+    .container-card-element{
+        margin: 0;
+    }
+}

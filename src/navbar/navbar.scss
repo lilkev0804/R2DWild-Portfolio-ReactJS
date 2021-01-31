@@ -1,56 +1,29 @@
-.Nav {
-    position: absolute;
-    bottom: 50vh;
-    z-index: 10;
+.navbar{
     background-color: black;
+    padding: 0;
+    margin-bottom: auto;
+    z-index: 1000;
     width: 100%;
-    height: 50px;
-    ul {
-        .nav-link{
-            list-style: none;
-            color: #F76C6C;
-            display: inline;
-            margin: 0 10px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            padding-top: -25px;
-            cursor: pointer;
-            font-family: "Roboto" ;
-            &:hover{
-                color: white;
-            }
-        }
-    }
-  }
-  @media screen and (max-width: 768px){
-    .Nav{
-        width: 100%;
-        ul {
-            padding: 10px 0 !important;
-            margin: 0 !important;
-        }
-    }
-}
-.Nav__black{
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.95);
-    width: 100%;
-    position: fixed;
-    top: 0;
-    height: 50px;
+    color: #F76C6C;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.Nav__white{
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.95);
-    width: 100%;
-    position: fixed;
-    top: 0;
+    transition: all .3s ease-in;
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            margin-right: .7rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: .12rem;
+        }
+    }
+}
+.navbar-black{
+    background-color: black;
+    position: fixed;
+    height: 50px;
+    top: 0;
 }

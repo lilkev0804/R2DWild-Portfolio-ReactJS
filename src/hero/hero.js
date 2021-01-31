@@ -22,7 +22,6 @@ const Hero = () => {
         <div className="containerPlanet">
             {DuplicateStar}     
         </div>
-        
     </div>
 }
 
