@@ -57,7 +57,7 @@ button:focus{
     align-items: center;
     justify-content: space-between;
 }
-.social a{
+.social a {
     color:#F76C6C !important;
     font-size: 2rem;
     position: absolute;
@@ -75,6 +75,10 @@ button:focus{
     background-color: white;
     position: relative;
     box-shadow: 0px 0px 12px 2px #F9A1A1;
+}
+.box-social button{
+    background-color: #F76C6C;
+    border: transparent 1px solid ;
 }
 .break{
     width: 150px;
@@ -115,24 +119,40 @@ button:focus{
     z-index: -10;
     color: white;
     text-align: left;
-  }
-  .showBackcard{
-      z-index: 1!important;
-      animation : scaleCard .4s ease-in forwards;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
-  @keyframes scaleCard{
-      from{
-        transform: translateX(0px);
+}
+.showBackcard{
+    z-index: 1!important;
+    animation : scaleCard .4s ease-in forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@keyframes scaleCard{
+    from{
+      transform: translateX(0px);
+      opacity: 0;
+    }to{
+        transform: translateX(10px);
+        opacity: 1;
+        box-shadow: 11px 11px 11px rgba(56, 48, 48, 0.62);
+    }
+}
+.backFaceCard{
+ animation : backface .4s linear forwards;
+}
+@keyframes backface{
+    from{
+        transform: translateX(10px);
         opacity: 0;
       }to{
-          transform: translateX(10px);
+          transform: translateX(0px);
           opacity: 1;
           box-shadow: 11px 11px 11px rgba(56, 48, 48, 0.62);
       }
-  }
+}
+.invisible{
+   display: none;
+}
   .moreInfo{
     font-size: 1.5rem;
     color: white;
@@ -169,13 +189,70 @@ button:focus{
 }
 
 .backanim{
-    animation: backanim .3s ease-in forwards;
+    animation: backanim .5s ease forwards;
 
 }
 @keyframes backanim{
     from{
         transform: translateX(10px);
+        opacity: 0;
       }to{
           transform: translateX(0px);
+          opacity: 1;
       }
+}
+.btnemail{
+   border: 1px solid transparent;
+   font-size: 2rem;
+   color:#F76C6C;
+   cursor: pointer;
+   background-image: url(./comment.svg);
+   background-repeat: no-repeat;
+   background-position:center;
+   border-radius:50%;
+   width:50px;
+   height:50px;
+   box-shadow: 0px 0px 12px 2px #F9A1A1;
+}
+#Capa_1{
+    width:10px;
+    height:10px;
+}
+.emailCopy{
+    padding: 10px;
+    background-color:#F76C6C;
+    font-size: .9rem;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 800;
+}
+.emailpaste{
+    animation: removePopUp 5s cubic-bezier(1,.01,.93,.04) forwards;
+}
+@keyframes removePopUp{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.ico-email{
+    z-index: -10;
+}
+@media screen and (max-width: 496px){
+    .backcard-1{
+        width: 100%;
+        transform: translateX(0px);
+    }
+    .showBackcard{
+        margin-left: -16px;
+    }
+    .container-card-element{
+        margin: 0;
+    }
 }

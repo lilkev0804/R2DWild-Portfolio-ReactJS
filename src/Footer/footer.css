@@ -22,12 +22,12 @@
     justify-content: space-around;
 }
 .ico-follow{
-    color: #F76C6C;
+    color: white ;
     font-size:2em;
     margin-right: 10px;
 }
 .ico-follow:hover{
-    color: white;
+    color: #F76C6C;
 }
 .logo-wcs{
     margin-top: 10px;
