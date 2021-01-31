@@ -1,4 +1,8 @@
-   .hero{
+@font-face{
+    font-family: star-wars;
+    src: url("../SfDistantGalaxyAltoutline-e2Bp.ttf");
+}
+.hero{
     width: 100%;
     background-color: black;
     margin-bottom: 20px;
@@ -11,8 +15,6 @@
     align-items: center;
     justify-content: center;
   }
-
-
 .hero-animation{
     color: white;
     overflow: hidden;
@@ -30,16 +32,19 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    max-width: 1000px;
+    width: 100%;
     z-index: 10;
     animation: rotate 3s 14s linear forwards;
     transform: scale3d(1, 0, -0.8) perspective(10000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
 }
+
 @media screen and (max-width: 996px){
     .afterMessage{
         width: 100%;
     }
 }
-@media screen and (max-width: 476px){
+@media screen and (max-width: 796px){
     .hero-fix ,.hero-fix-sd{
        font-size: 2rem !important;
     }
@@ -49,16 +54,14 @@
     text-transform: uppercase;
     color: white;
     letter-spacing: 3px;
-    font-family: 'StarJedi';
-
+    font-family: "star-wars";
 }
 .hero-fix-sd{
     font-size: 4em;
     text-transform: uppercase;
     color: white;
     letter-spacing: 3px;
-    font-family: 'StarJedi';
-
+    font-family: "star-wars";
 }
 @keyframes rotate{
     from { transform: scale3d(1,0,-0.8) translate(-50%, -50%); }
@@ -82,7 +85,7 @@
 }
 @keyframes translatemessage{
     0%{
-        transform: translateY(1000px);
+        transform: translateY(250px);
     }
     100%{
         transform: translateY(-1000px);
@@ -98,7 +101,11 @@
 .containerPlanet{
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     height: 60vh;
+=======
+    height: 50vh;
+>>>>>>> presentation
     perspective: 100px;
     transform: perspective(1000px);
 }
@@ -203,13 +210,3 @@
     }
 }
 
-.scroll-btn{
-    width: 30px;
-    height: 50px;
-    border: 1px solid white;
-    z-index: 1000;
-    position: absolute;
-    bottom: 50px;
-    right: 25px;
-    border-radius: 20px;
-  }

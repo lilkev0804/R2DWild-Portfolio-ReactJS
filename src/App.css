@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+::-webkit-scrollbar {
+  display: none;
+  }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -63,3 +65,13 @@
   }
 }
 
+.title-section{
+  color: #F76C6C;
+  margin-bottom: 4vh;
+  font-size: 2rem;
+}
+
+.tesst{
+  width: 100%;
+  height: 100vh;
+}

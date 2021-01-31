@@ -1,5 +1,115 @@
 .section-staff{
     background-color: white;
-    height: 100vh;
     width: 100%;
+    margin-bottom: 5vh;
+}
+.staff-section-title{
+    color:#F76C6C;
+    letter-spacing:2px;
+    font-size: 2rem;
+    margin-bottom: 4vh;
+    text-transform: uppercase;
+}
+.container-staff{
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+}
+@media screen and (max-width:796px){
+    .container-staff{
+        flex-direction: column;
+        align-items: center;
+    }
+    .recrutement{
+        max-width: 400px;
+        width: 100% !important;
+    }
+    .profils-staff{
+        width:400px !important;
+    }
+}
+@media screen and (max-width:400px){
+    .profils-staff{
+        width: 90% !important;
+    }
+}
+.profils-staff , .recrutement{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.staff-card{
+    max-width: 400px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.left-side{
+    width: 150px;
+    height: 100%;
+    background-color: #F76C6C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-side{
+    width: 250px;
+    height: 100%;
+    background-color: #F76C6C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social-member{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ico-follow-member{
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.ico-follow-member:hover{
+   animation: scaleico .3s ease-in-out forwards;
+}
+@keyframes scaleico{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+.member-name{
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: white;
+}
+.member-profession{
+    font-style: italic;
+    color: white;
+    text-transform: capitalize;
+}
+
+.title-contact{
+    font-size: 2rem;
+    color :#F76C6C;
+}
+.img-members{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.recrutement a {
+    color: #F76C6C;
+    text-decoration: none;
+    
 }
