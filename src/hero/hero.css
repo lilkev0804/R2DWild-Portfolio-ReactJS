@@ -101,11 +101,7 @@
 .containerPlanet{
     position: relative;
     width: 100%;
-<<<<<<< HEAD
     height: 60vh;
-=======
-    height: 50vh;
->>>>>>> presentation
     perspective: 100px;
     transform: perspective(1000px);
 }

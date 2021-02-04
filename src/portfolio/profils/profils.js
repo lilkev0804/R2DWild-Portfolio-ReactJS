@@ -367,21 +367,21 @@ const Wilders =[
         key:19,
         image:'orlando',
         identity:"SRNIC Orlando",
-        city:'Les Lilas',
-        prez:'Petite présentation et remplir tableau infos mobilité',
+        city:'Paris',
+        prez:'',
         linkedin:'https://www.linkedin.com/in/orlando-srnic-b6a755201/',
         github:'',
-        email:'',
+        email:'orlando.srnic@gmail.com',
         skill:[
             'JavaScript', 
             'HTML',
             'CSS'
             ],
-        workPlace:['','',''],
-        franceMobility:'',
-        internationalMobility:'',
-        remote:'',
-        beforeWcs:['','']
+        workPlace:['Paris','',''],
+        franceMobility:'non',
+        internationalMobility:'non',
+        remote:'oui',
+        beforeWcs:['Dépannage informatique','']
     },
     {
         key:20,

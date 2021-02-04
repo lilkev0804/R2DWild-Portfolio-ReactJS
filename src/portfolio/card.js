@@ -69,7 +69,7 @@ class Card extends React.Component{
                         <p className="element-card">3 - {workPlace3}</p>
                     <p className="title-card">Télétravail :</p>
                         <p className="element-card">{remote}</p>
-                    <p className="title-card">Mobilité internationnale :</p>
+                    <p className="title-card">Mobilité internationale :</p>
                         <p className="element-card">{internationalMobility}</p>
                     <p className="title-card">Mobilité France entière :</p>
                         <p className="element-card">{franceMobility}</p>

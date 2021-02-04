@@ -10,9 +10,9 @@ const Hero = () => {
         <br></br>
         <p className="element-anim">R2D WILD</p>
         <br></br>
-        <p className="element-anim">20 combatants du code regroupé</p>
+        <p className="element-anim">20 combattants du code regroupés</p>
         <p className="element-anim">autour d'une même mission </p>
-        <p className="element-anim"> devenir des developpeurs</p>
+        <p className="element-anim"> devenir des développeurs</p>
         </div>
        </div>
         <div className="afterMessage">
