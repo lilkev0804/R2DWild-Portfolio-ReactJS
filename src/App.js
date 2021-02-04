@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Navbar from './navbar/Navbar';
-import Footer from './Footer/Footer.js';
+import Footer from './Footer/footer.js';
 import Hero from './hero/hero';
 import Staff from './staff/staff';
 import Project from './Project/Project';
