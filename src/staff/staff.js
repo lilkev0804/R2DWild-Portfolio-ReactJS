@@ -52,7 +52,7 @@ const Staff = () => {
            </div>
            <div className="recrutement">
                 <h3 className="title-contact">Nous recruter ? </h3>
-                <p>Contacter Clément Bechetoille par email <em>clement.bechetoille@wildcodeschool.com</em></p>
+                <p className="contact-cb">Contacter Clément Bechetoille par email <span className="email-cb">clement.bechetoille@wildcodeschool.com</span></p>
                 <p>ou </p>
                 <p>directement à cette <a target="blanck" href="https://www.wildcodeschool.com/fr-FR/recrutez-vos-talents"> adresse</a> afin de déposer une annonce. </p>
            </div>

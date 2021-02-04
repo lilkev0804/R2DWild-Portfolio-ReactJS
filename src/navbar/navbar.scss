@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 .Nav {
     position: absolute;
     bottom: 40%;
     z-index: 2;
-=======
+}
 .navbar{
->>>>>>> presentation
     background-color: black;
     padding: 0;
     margin-bottom: auto;
@@ -17,9 +15,11 @@
     justify-content: center;
     transition: all .3s ease-in;
     height: 50px;
+    border: 1px solid black;
     ul{
         list-style: none;
         display: flex;
+        padding: 0;
         li{
             margin-right: .7rem;
             text-transform: uppercase;
@@ -33,4 +33,18 @@
     position: fixed;
     height: 50px;
     top: 0;
+}
+@media screen and (max-width:350px){
+    .navbar{
+        height: auto;
+        padding: 0;
+        width: 100vw;
+    }
+    .navbar ul{
+        flex-direction: column;
+        li{
+            margin-top: 2px;
+            margin-right: 0px;
+        }
+    }
 }

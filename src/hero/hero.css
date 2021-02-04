@@ -206,3 +206,11 @@
     }
 }
 
+@media screen and (max-width: 360px){
+    .hero-animation{
+        overflow: hidden;
+    }
+    .element-anim{
+        font-size: 1rem;
+    }
+}

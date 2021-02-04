@@ -1,3 +1,9 @@
+.Nav {
+  position: absolute;
+  bottom: 40%;
+  z-index: 2;
+}
+
 .navbar {
   background-color: black;
   padding: 0;
@@ -17,6 +23,7 @@
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
   height: 50px;
+  border: 1px solid black;
 }
 
 .navbar ul {
@@ -24,6 +31,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 .navbar ul li {
@@ -38,5 +46,23 @@
   position: fixed;
   height: 50px;
   top: 0;
+}
+
+@media screen and (max-width: 350px) {
+  .navbar {
+    height: auto;
+    padding: 0;
+    width: 100vw;
+  }
+  .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar ul li {
+    margin-top: 2px;
+    margin-right: 0px;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */

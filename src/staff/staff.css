@@ -16,24 +16,7 @@
     margin: auto;
     display: flex;
 }
-@media screen and (max-width:796px){
-    .container-staff{
-        flex-direction: column;
-        align-items: center;
-    }
-    .recrutement{
-        max-width: 400px;
-        width: 100% !important;
-    }
-    .profils-staff{
-        width:400px !important;
-    }
-}
-@media screen and (max-width:400px){
-    .profils-staff{
-        width: 90% !important;
-    }
-}
+
 .profils-staff , .recrutement{
     width: 50%;
     display: flex;
@@ -112,4 +95,39 @@
     color: #F76C6C;
     text-decoration: none;
     
+}
+@media screen and (max-width:796px){
+    .container-staff{
+        flex-direction: column;
+        align-items: center;
+    }
+    .recrutement{
+        max-width: 400px;
+        width: 100% !important;
+    }
+    .profils-staff{
+        width:400px !important;
+    }
+}
+@media screen and (max-width:400px){
+    .profils-staff{
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 350px){
+    .staff-card{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .left-side, .right-side{
+        width: 100%;
+    }
+    .contact-cb{
+        text-align: center;
+        width: 100%;
+    }
+    .email-cb{
+        font-size: 0.5rem;
+    }
 }
