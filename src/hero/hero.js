@@ -17,7 +17,7 @@ const Hero = () => {
        </div>
         <div className="afterMessage">
             <p className="hero-fix" value="hello">DISPONIBLE  </p>
-            <p className="hero-fix-sd">Dès le 3 mai 2020</p>
+            <p className="hero-fix-sd">Dès le 3 mai 2021</p>
         </div>
         <div className="containerPlanet">
             {DuplicateStar}     
