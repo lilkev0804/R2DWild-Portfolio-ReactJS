@@ -35,7 +35,7 @@
     max-width: 1000px;
     width: 100%;
     z-index: 10;
-    animation: rotate 3s 14s linear forwards;
+    animation: rotate 2.3s 10s linear forwards;
     transform: scale3d(1, 0, -0.8) perspective(10000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
 }
 
@@ -81,7 +81,7 @@
     height: 50%;
     width: 100%;
     transform: translateY(1000px);
-    animation: translatemessage 15s linear forwards;
+    animation: translatemessage 13s linear forwards;
 }
 @keyframes translatemessage{
     0%{
