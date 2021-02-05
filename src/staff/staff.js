@@ -7,7 +7,7 @@ const members = [
         profession: 'formateur',
         linkedin: 'https://www.linkedin.com/in/akerkeb/',
         github: 'https://github.com/Miadil',
-        img:"img/abdou.jpeg"
+        img:"img/abdou.jpg"
     },
     {
         name:"florian",
@@ -15,7 +15,7 @@ const members = [
         profession: 'formateur',
         linkedin: 'https://www.linkedin.com/in/florian-grandjean/',
         github: 'https://github.com/florianpdf',
-        img:"img/florian.jpeg"
+        img:"img/florian.jpg"
     },
     {
         name:"clément",
