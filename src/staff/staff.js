@@ -44,7 +44,7 @@ const Staff = () => {
                             <p className="member-profession">{member.profession}</p>
                             <div className="social-member">
                             <a target="blanck" href={member.linkedin}> <i className="ico-follow-member fab fa-linkedin-in"></i></a>
-                            <a target="blanck" href={member.github}> <i className="ico-follow-member fab fa-github"></i></a>
+                            <a className={`githublogo ${member.github === "" ? 'invisible' : 'visible'}`} target="blanck" href={member.github}> <i className="ico-follow-member fab fa-github"></i></a>
                             </div>
                         </div>
                         </div>
