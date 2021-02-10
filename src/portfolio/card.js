@@ -55,7 +55,7 @@ class Card extends React.Component{
                 <div className="social">
                     <div className="box-social"><a href={linkedin} target='blanck'><i className="fab fa-linkedin"></i></a></div>
                     <div className="box-social"><a href={github} target="blanck"><i className="fab fa-github-square"></i></a></div>
-                    <button className=" btnemail" onClick={(e) => this.emailPaste(e)} value={this.props.email} >
+                    <button className="btnemail" onClick={(e) => this.emailPaste(e)} value={this.props.email} >
             
                     </button>
                 </div>
