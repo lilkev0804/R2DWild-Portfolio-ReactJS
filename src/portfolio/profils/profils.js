@@ -58,7 +58,7 @@ const Wilders =[
         franceMobility:'non',
         internationalMobility:'oui',
         remote:'disponible',
-        beforeWcs:['Tourisme et hotellerie','Langues/traduction']
+        beforeWcs:['Hôtellerie','Langues/traduction']
     },
     {
         key:4,
@@ -138,7 +138,7 @@ const Wilders =[
         franceMobility:'Non',
         internationalMobility:'Non',
         remote:'disponible',
-        beforeWcs:['Aeronautique et Spacial','','']
+        beforeWcs:['Spatial','','']
     },
     {
         key:8,
@@ -161,7 +161,7 @@ const Wilders =[
         franceMobility:'oui',
         internationalMobility:'oui',
         remote:'disponible',
-        beforeWcs:['Retails','','']
+        beforeWcs:['Retail','','']
     },
     {
         key:9,
@@ -261,7 +261,7 @@ const Wilders =[
         franceMobility:'oui',
         internationalMobility:'non',
         remote:'disponible',
-        beforeWcs:['','','']
+        beforeWcs:['Location Automobile','Juridique','']
     },
     {
         key:14,
