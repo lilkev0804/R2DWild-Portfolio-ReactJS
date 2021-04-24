@@ -2,6 +2,6 @@
 
 Réalisation du Port Folio des élèves de la session Novembre 2020 à la Wild code School 
 
-#Techno
+## Techno
 
-React JS 
+React JS / CSS 
